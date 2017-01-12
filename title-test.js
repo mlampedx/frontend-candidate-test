@@ -79,25 +79,25 @@ describe('Title Creator', function() {
     });
 
     // Bonus tests - uncomment if you want to give them a try
-    // it('Given a query of "nordstrom+dress" and a store of "nordstrom", the title should be "Dress at Nordstrom"', function() {
-    //     var state = {
-    //         query: 'nordstrom+dress',
-    //         brand: null,
-    //         store: 'nordstrom',
-    //         category: null
-    //     };
-    //     var title = parseTitle(state);
-    //     assert.equal(title, 'Dress at Nordstrom')
-    // });
+    it('Given a query of "nordstrom+dress" and a store of "nordstrom", the title should be "Dress at Nordstrom"', function() {
+        var state = {
+            query: 'nordstrom+dress',
+            brand: null,
+            store: 'nordstrom',
+            category: null
+        };
+        var title = parseTitle(state);
+        assert.equal(title, 'Dress at Nordstrom')
+    });
 
-    // it('Given a store of "alice+olivia", the title should be "Alice+Olivia"', function() {
-    //     var state = {
-    //         query: null,
-    //         brand: null,
-    //         store: 'alice+olivia',
-    //         category: null
-    //     };
-    //     var title = parseTitle(state);
-    //     assert.equal(title, 'Alice+Olivia')
-    // });
+    it('Given a store of "alice+olivia", the title should be "Alice+Olivia"', function() {
+        var state = {
+            query: null,
+            brand: null,
+            store: 'alice+olivia',
+            category: null
+        };
+        var title = parseTitle(state);
+        assert.equal(title, 'Alice+Olivia')
+    });
 });
